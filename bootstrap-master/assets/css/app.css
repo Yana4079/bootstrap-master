@@ -11528,6 +11528,30 @@ button span {
   font-size: 24px;
 }
 
+.dropdown-menu {
+  margin: 2.9rem 0 !important;
+}
+
+.article-entry {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #D9D9D9;
+  color: #343B41;
+}
+
+.article-entry h4 {
+  font-size: 20px;
+}
+
+.article-entry h4:hover {
+  color: #56ae57;
+  cursor: pointer;
+}
+
+.article-entry .entry-abstact {
+  font-size: 15px;
+}
+
 .form {
   position: relative;
 }

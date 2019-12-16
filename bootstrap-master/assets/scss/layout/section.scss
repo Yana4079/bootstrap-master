@@ -110,3 +110,23 @@
     font-size: 24px; 
   }
 }
+
+.dropdown-menu {
+    margin: 2.9rem 0 !important;
+}
+.article-entry {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #D9D9D9;
+    color: #343B41;
+    h4 {
+        font-size: 20px;
+        &:hover {
+            color: #56ae57;
+            cursor: pointer;
+        }
+    }
+    .entry-abstact {
+        font-size: 15px;
+    }
+}
