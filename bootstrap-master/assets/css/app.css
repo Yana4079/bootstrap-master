@@ -11491,8 +11491,41 @@ button span {
 }
 
 .container__content {
-  color: #343B41;
-  padding: 30px 20% 0 20%;
+  color: #343b41;
+  padding: 30px 15%;
+}
+
+.col h2 {
+  margin: 10px 0 15px !important;
+  color: #fbc910;
+  font-size: 24px;
+  position: relative;
+}
+
+.col .title__line {
+  margin: 10px 0 15px !important;
+  color: #fbc910;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.col .title__line::before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 17px;
+  height: 4px;
+  background-color: #fbc910;
+  position: absolute;
+  z-index: 0;
+}
+
+.col .title__line span {
+  padding: 0 10px 0 0;
+  background-color: white;
+  position: relative;
+  color: #fbc910;
+  font-size: 24px;
 }
 
 .form {
