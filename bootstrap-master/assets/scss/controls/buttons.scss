@@ -1,0 +1,69 @@
+.btn {
+  padding: 0.5em 1em;
+  color: #fff;
+  border-radius: 3px;
+  background: linear-gradient(top, #4387fd, #4683ea);
+  font-weight: 500;
+  &:active,
+  &:focus {
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+    background: linear-gradient(top, #3c7ae4, #3f76d3);
+  }
+}
+
+.clean-btn {
+  @extend %clean-btn;
+}
+
+.search-btn {
+  @extend %clean-btn;
+  border: none;
+  &:active,
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -2px;
+  }
+}
+
+.menu-btn {
+  display: none;
+  padding: 5px;
+  font-size: 24px;
+  span {
+  }
+  @include bp(600px) {
+    display: block;
+  }
+}
+
+.close {
+  display: none;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  color: #aaa;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 2px;
+    background-color: #6d6d6d;
+    border-radius: 2px;
+  }
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.app-btn {
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 24px;
+  color: $border;
+}

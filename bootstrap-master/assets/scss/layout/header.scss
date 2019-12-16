@@ -1,0 +1,118 @@
+.container-fluid {
+  position: fixed !important;
+}
+.navbar_logo {
+  max-width: 232px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navbar {
+  font-family: "Oswald", sans-serif !important;
+}
+
+.navbar-brand {
+  position: relative;
+  width: 30px;
+  height: 11px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: $nav;
+    top: -4px;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: $nav;
+    bottom: 3px;
+    left: 0;
+  }
+}
+.navbar-brand span {
+  &::after {
+    content: "MENU";
+    position: absolute;
+    font-family: sans-serif;
+    top: 6px;
+    left: 0;
+    right: 0;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    display: block;
+    color: $nav;
+    opacity: 1;
+    font-size: 9px;
+  }
+}
+
+.navbar-nav {
+  display: flex !important;
+  width: 70% !important;
+  justify-content: space-between !important;
+}
+
+.dropdown-toggle,
+.nav-link {
+  color: $nav;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.dotted_nav {
+  width: 73px;
+  height: 40px;
+  right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.dotted_nav span {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  border-radius: 3px;
+  top: 17px;
+  left: 48px;
+  background-color: $nav;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 0;
+    height: 4px;
+    width: 4px;
+    border-radius: 3px;
+    background-color: $nav;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 0;
+    height: 4px;
+    width: 4px;
+    border-radius: 3px;
+    background-color: $nav;
+  }
+}
+
+.search_panel_nav {
+  > svg {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    position: absolute;
+    right: 0;
+    margin-top: -15px;
+  }
+}
+
+.overlay__close {
+  cursor: pointer;
+}
+
