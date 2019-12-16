@@ -11386,6 +11386,94 @@ button span {
   cursor: pointer;
 }
 
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    color: #fff;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 988px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section__content {
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 576px) {
+  .section__content {
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section__content {
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section__content {
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section__content {
+    margin-top: 110px;
+  }
+}
+
+.section__content .container {
+  background-color: #fff;
+}
+
+.nav__space:not(:last-child)::after {
+  color: #cccccc;
+  content: "/\00a0";
+  padding: 0 5px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav__space {
+  padding-right: 0 !important;
+}
+
+.nav__space:nth-child(2) {
+  padding-left: 0 !important;
+}
+
+.nav__space:nth-child(3) {
+  padding-left: 0 !important;
+}
+
+.breadcrumb {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
 .form {
   position: relative;
 }
