@@ -1,4 +1,5 @@
 .container {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   @include media-breakpoint-up(sm) {
     width: 100%;
     color: #fff;
@@ -39,27 +40,49 @@
   }
 }
 
- .nav__space:not(:last-child)::after {
-    color: #cccccc;
-    content: "/\00a0";
-    padding: 0 5px;
-    font-weight: 400;
-    font-size: 18px;
-  }
- 
- .nav__space{
-    padding-right: 0 !important;
- }
+.nav__space:not(:last-child)::after {
+  color: #cccccc;
+  content: "/\00a0";
+  padding: 0 5px;
+  font-weight: 400;
+  font-size: 18px;
+}
 
- .nav__space:nth-child(2) {
-    padding-left: 0 !important;
- }
+.nav__space {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 
- .nav__space:nth-child(3) {
-    padding-left: 0 !important;
- }
- .breadcrumb {
-     margin-top: 20px;
-     margin-bottom: 20px;
-     background-color: #fff;
- }
+.nav__space:nth-child(2) {
+  padding-left: 0 !important;
+  color: #56ae57;
+}
+
+.nav__space:nth-child(1) {
+  color: #56ae57;
+}
+
+.nav__space:nth-child(3) {
+  padding-left: 0 !important;
+  color: #a4a8ad;
+}
+.breadcrumb {
+  background-color: #fff;
+  margin-bottom: 0 !important;
+}
+
+.col__img {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.container__content {
+    color: #343B41;
+    padding: 30px 20% 0 20%;
+}
+
+.col h2 {
+        margin: $marginTXT !important;
+    }
+
+$containerFW:700;
+$marginTXT: 10px 0 15px; 

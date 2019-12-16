@@ -11386,6 +11386,11 @@ button span {
   cursor: pointer;
 }
 
+.container {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 576px) {
   .container {
     width: 100%;
@@ -11458,20 +11463,36 @@ button span {
 
 .nav__space {
   padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .nav__space:nth-child(2) {
   padding-left: 0 !important;
+  color: #56ae57;
+}
+
+.nav__space:nth-child(1) {
+  color: #56ae57;
 }
 
 .nav__space:nth-child(3) {
   padding-left: 0 !important;
+  color: #a4a8ad;
 }
 
 .breadcrumb {
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: #fff;
+  margin-bottom: 0 !important;
+}
+
+.col__img {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.container__content {
+  color: #343B41;
+  padding: 30px 20% 0 20%;
 }
 
 .form {
