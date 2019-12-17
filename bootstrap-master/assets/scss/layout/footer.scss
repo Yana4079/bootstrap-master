@@ -1,8 +1,9 @@
 .background__footer {
-  padding: 20px 0;
+  padding: 20px 30px;
   background-color: #f9fafa;
   color: #555d64;
   border-top: 1px solid #d9d9d9;
+  margin: 0 -15px;
 }
 .title__logo {
   color: #555d64;
@@ -22,7 +23,7 @@
   margin-left: 50%;
   color: white;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .figure__footer ul li:first-child::after {
@@ -36,40 +37,102 @@
   margin: 0 auto;
 }
 .button_info {
-    background: #FFF url(https://cdn.iubenda.com/icon_green_mini.png) no-repeat;
-    background-size: auto 14px;
-    background-position: 7px 3px;
-    background-position-x: 6px;
-    background-position-y: 2px;
-    padding-left: 20px;
-    padding-right: 8px;
-    text-decoration: none;
-    color: #59636D;
-    -webkit-box-shadow: 0 1px 0 #ebebec;
-    box-shadow: 0 1px 0 #ebebec;
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.08);
-    box-shadow: 0 1px 0 rgba(0,0,0,0.08);
-    border-top-color: #D0D0D0;
-    border-left-color: #C3C3C3;
-    border-right-color: #C3C3C3;
-    border-bottom-color: #B8B9BA;
-    border-radius: 3px;
-    font-size: 11px;
-    border: 1px solid #D2D3D3;
-    line-height: 18px;
-    font-weight: bold;
-    &:first-child {
-        margin-right: 15px;
-    }
+  background: #fff url(https://cdn.iubenda.com/icon_green_mini.png) no-repeat;
+  background-size: auto 14px;
+  background-position: 7px 3px;
+  background-position-x: 6px;
+  background-position-y: 2px;
+  padding-left: 20px;
+  padding-right: 8px;
+  text-decoration: none;
+  color: #59636d;
+  -webkit-box-shadow: 0 1px 0 #ebebec;
+  box-shadow: 0 1px 0 #ebebec;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  border-top-color: #d0d0d0;
+  border-left-color: #c3c3c3;
+  border-right-color: #c3c3c3;
+  border-bottom-color: #b8b9ba;
+  border-radius: 3px;
+  font-size: 11px;
+  border: 1px solid #d2d3d3;
+  line-height: 18px;
+  font-weight: bold;
+  &:first-child {
+    margin-right: 15px;
+  }
 }
 
 .information__footer {
-    border-top: 1px solid #D9D9D9;
-    margin: 16px 0;
-    padding: 16px 0;
+  border-top: 1px solid #d9d9d9;
+  margin: 16px 0;
+  padding: 16px 0;
 }
 
 .copyright__footer {
-    color: #555d64;
-    font-size: 1.0rem;
+  color: #555d64;
+  font-size: 1rem;
+}
+
+.footer__navigation a {
+  padding-right: 10px;
+  &:hover {
+    color: #56ae57;
+    cursor: pointer;
+  }
+}
+
+.segui {
+  font-weight: 300;
+  font-size: 20px;
+  color: #959a9e;
+}
+.icon-twitter {
+  color: #555d64;
+  font-size: 22px;
+  line-height: 34px;
+  &::before {
+    content: "\f099";
+    font-family: fontawesome !important;
+  }
+}
+
+.icon-rss {
+  font-size: 22px;
+  line-height: 34px;
+  &::before {
+    content: "\f09e";
+    font-family: fontawesome !important;
+  }
+}
+.icon-youtube {
+  font-size: 22px;
+  line-height: 34px;
+  &::before {
+    content: "\f167";
+    font-family: fontawesome !important;
+  }
+}
+
+.icon-google-plus {
+  font-size: 22px;
+  line-height: 34px;
+  &::before {
+    content: "\f0d5";
+    font-family: fontawesome !important;
+  }
+}
+
+.icon-facebook {
+  font-size: 22px;
+  line-height: 34px;
+  &::before {
+    content: "\f09a";
+    font-family: fontawesome !important;
+  }
+}
+
+.none_padding {
+    padding-right: 0 !important;
 }
