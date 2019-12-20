@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.ico">
 
   <title>Bootstrap Stater</title>
-  <script src="assets/js/main.js"></script>
+
   <!-- Icons for this template -->
   <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Stylesheet -->
@@ -17,24 +17,49 @@
   <link href="assets/css/app.css" rel="stylesheet">
   <!-- endbuild -->
   <script src="https://kit.fontawesome.com/ce52388740.js" crossorigin="anonymous"></script>
+  <style>
+  .hide{
+    display: block !important;
+  }
+ 
+  </style>
 </head>
 
 <body>
-  <div class="background_menu" id="close">
+  <div class="background_menu" id="close" style="display: none;">
     <div class="container__LeftMenu">
       <div class="overlay__close" onclick="HideLeftMenu()">
       </div>
       <div class="navigation_menu">
         <ul>
-          <li>
+          <li class="toggle_menu">
             Panorama d’Italia
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <i class="fa fa-chevron-down"></i>
+            <ul class="submenu">
+              <li class="submenu__Item" >Tappe</li>
+              <li class="submenu__Item " >Palermo</li>
+              <li class="submenu__Item " >Roma</li>
+            </ul>
+        
           </li>
-          <li>News
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <li class="toggle_menu">
+            News
+            <i class="fa fa-chevron-down"></i>
+            <ul class="submenu">
+                <li class="submenu__Item" href="#">Politica</li>
+                <li class="submenu__Item" href="#">Cronaca</li>
+                <li class="submenu__Item" href="#">Esteli</li>
+              </ul>
           </li>
-          <li>Economia
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <li class="toggle_menu">Economia
+            <i class="fa fa-chevron-down"></i>
+            <ul class="submenu">
+                <li class="submenu__Item" href="#">Tasse</li>
+                <li class="submenu__Item" href="#">Lavoro</li>
+                <li class="submenu__Item" href="#">Soldi</li>
+                <li class="submenu__Item" href="#">Euro</li>
+                <li class="submenu__Item" href="#">Numeri</li>
+              </ul>
           </li>
           <li>Mytech
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
@@ -212,16 +237,9 @@
         <div class="dotted_nav">
           <span class="dotted"></span>
         </div>
-        <div class="search_panel_nav">
-          <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-            <g stroke="#4a4a4a" stroke-width="3" fill="none" fill-rule="evenodd">
-              <path
-                d="M4.728 13.027c0-4.583 3.778-8.3 8.417-8.3 4.648 0 8.416 3.726 8.416 8.3 0 4.583-3.776 8.3-8.415 8.3-4.65 0-8.417-3.726-8.417-8.3z">
-              </path>
-              <path d="M20.073 20.14l4.81 4.742" stroke-linecap="square"></path>
-            </g>
-          </svg>
-        </div>
+        <div class="overlay__button">
+            <button class="button__menu">ABBONATI</button>
+          </div>
       </div>
     </nav>
   </div>
@@ -230,7 +248,7 @@
       <div class="row breadcrumb">
         <nav class="nav">
           <a class="nav-link active nav__space" href="">Panorama</a>
-          <a class="nav-link nav__space" href="">Economia</a>
+          <a class="nav-link nav__space" href="">Incidenti</a>
           <a class="nav-link nav__space" href="">Brexit: cosa cambia per gli italiani che vivono in Inghilterra</a>
         </nav>
       </div>
@@ -426,6 +444,7 @@
   <script src="assets/js/vendor/jquery.slim.min.js"></script>
   <script src="assets/js/vendor/popper.min.js"></script>
   <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
   <!-- build:js -->
   <script src="assets/js/app.js"></script>
   <!-- endbuild -->

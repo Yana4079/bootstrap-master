@@ -11507,6 +11507,10 @@ i {
   padding-right: 0 !important;
 }
 
+.col__img img {
+  width: 100%;
+}
+
 .container__content {
   color: #343b41;
   padding: 30px 15%;
@@ -11552,8 +11556,8 @@ i {
 .article-entry {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid #D9D9D9;
-  color: #343B41;
+  border-top: 1px solid #d9d9d9;
+  color: #343b41;
 }
 
 .article-entry h4 {
@@ -11770,7 +11774,7 @@ i {
 
 .background_menu {
   width: 320px;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -11840,8 +11844,40 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 22px !important;
   line-height: 40px !important;
+}
+
+.submenu {
+  position: relative;
+  padding-left: 24px;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  display: none;
+}
+
+.submenu::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: calc(100% - 20px);
+  left: 0;
+  top: 9px;
+  background-color: #4a4a4a;
+}
+
+.submenu__Item {
+  opacity: 1;
+}
+
+.overlay_title {
+  color: #d1d1d1 !important;
+  margin-bottom: 20px !important;
+  font-size: 16px !important;
 }
 
 .overlay_social {
@@ -11850,12 +11886,6 @@ i {
   margin: 35px 0;
   padding-top: 30px;
   padding-bottom: 16px;
-}
-
-.overlay_title {
-  color: #d1d1d1 !important;
-  margin-bottom: 20px !important;
-  font-size: 16px !important;
 }
 
 .overlay__button {
@@ -11875,6 +11905,20 @@ i {
   text-decoration: none;
   z-index: 1;
   margin: 20px auto;
+}
+
+.button__menu {
+  margin: 0 !important;
+  height: 40px !important;
+  line-height: 40px !important;
+}
+
+.fa-chevron-down {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
 }
 
 .btn {

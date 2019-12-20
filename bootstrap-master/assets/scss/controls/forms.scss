@@ -1,23 +1,22 @@
 .form {
   position: relative;
-}
-
-.form__label {
-  display: block;
-  position: relative;
-}
-
-.form__input {
-  padding: 6px 5px 6px 6px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  font-size: 16px;
-  &:active,
-  &:focus {
-    border: 1px solid #4387fd;
+  &__label {
+    display: block;
+    position: relative;
+  }
+  &__input {
+    padding: 6px 5px 6px 6px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    &:active,
+    &:focus {
+      border: 1px solid #4387fd;
+    }
   }
 }
+
 
 .search-form {
   .form__input {
@@ -34,7 +33,7 @@
 
 .background_menu {
   width: 320px;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -85,30 +84,48 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       font-size: 22px !important;
       line-height: 40px !important;
     }
   }
 }
 
-.overlay_social {
+.submenu {
+  position: relative;
+  padding-left: 24px;
+  height: 100%;
+  flex: 1 0 100%;
+  display: none;
+&::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: calc(100% - 20px);
+  left: 0;
+  top: 9px;
+  background-color: #4a4a4a;
+}
+&__Item {
+  opacity: 1;
+  }
+}
+
+
+.overlay {
+&_title {
+  color: #d1d1d1 !important;
+  margin-bottom: 20px !important;
+  font-size: 16px !important;
+}
+&_social {
   border-top: 3px solid #f3f3f3;
   border-bottom: 3px solid #f3f3f3;
   margin: 35px 0;
   padding-top: 30px;
   padding-bottom: 16px;
 }
-// .fa-chevron-down:before {
-//   height: 1.5px !important;
-//   width: 7px !important;
-// }
-.overlay_title {
-  color: #d1d1d1 !important;
-  margin-bottom: 20px !important;
-  font-size: 16px !important;
-}
-
-.overlay__button {
+&__button {
   text-align: center;
   button {
     background: #000000;
@@ -125,3 +142,20 @@
     margin: 20px auto;
   }
 }
+}
+
+.button__menu {
+   margin: 0 !important;
+   height: 40px !important;
+   line-height: 40px !important;
+ }
+
+ .fa-chevron-down {
+   cursor: pointer;
+  
+ }
+
+ .hide{
+  display: none;
+}
+
