@@ -24,5 +24,25 @@ function OpenLeftMenu() {
     console.log("Привет");
 }
 
+if (localStorage.getItem("comment-draft_af66c166630dea36556b924b97545e7e-rte") && localStorage.getItem("NameForm")) {
+    document.getElementById("comment").innerText = localStorage.getItem("comment-draft_af66c166630dea36556b924b97545e7e-rte");
+    document.getElementById("name").innerText = localStorage.getItem("NameForm");
+    document.getElementById('comment__block').style.display = "block";
+}
+
+function SendComment() {
+    var textAlert = document.getElementById("comment-draft_af66c166630dea36556b924b97545e7e-rte").value;
+    var textName = document.getElementById("NameForm").value;
+
+    localStorage.setItem("comment-draft_af66c166630dea36556b924b97545e7e-rte", textAlert);
+    localStorage.setItem("NameForm", textName);
+
+
+    document.getElementById("comment").innerHTML = document.getElementById("comment-draft_af66c166630dea36556b924b97545e7e-rte").value;
+    document.getElementById("name").innerHTML = document.getElementById("NameForm").value;
+    document.getElementById('comment__block').style.display = "block";
+    var textAlert = document.getElementById("comment-draft_af66c166630dea36556b924b97545e7e-rte").value = "";
+    var textName = document.getElementById("NameForm").value = "";
+}
 
 
